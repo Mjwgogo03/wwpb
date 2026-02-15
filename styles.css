@@ -378,6 +378,13 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 5px var(--shadow);
 }
 
+.logo-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
 .logo h1 {
     font-size: 1.8rem;
     font-family: 'Pacifico', cursive;
@@ -1660,6 +1667,11 @@ section {
         width: 40px;
         height: 40px;
         font-size: 1.5rem;
+    }
+
+    .logo-image {
+        width: 55px;
+        height: 55px;
     }
 
     .hamburger {
