@@ -463,7 +463,7 @@ background: transparent;
 
 .hero-content {
     text-align: center;
-    color: var(--black);
+    color: var(--white);
     z-index: 2;
     padding: 2rem;
 }
