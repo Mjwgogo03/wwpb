@@ -1152,7 +1152,6 @@ section {
     min-width: 33.333%;
     box-sizing: border-box;
 }
-}
 
 @keyframes fadeInUp {
     from {
@@ -1209,7 +1208,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
 }
-}.photo-frame img {
+.photo-frame img {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
