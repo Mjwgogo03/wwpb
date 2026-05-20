@@ -674,8 +674,12 @@ section::before {
    About Section
    =================================== */
 .about {
-    background: transparent;
-    position: relative;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(255, 215, 0, 0.03) 50%,
+        transparent 100%
+    );
 }
 
 .about::before {
