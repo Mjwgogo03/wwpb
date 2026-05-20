@@ -784,17 +784,24 @@ section::before {
 }
 
 .feature {
-    background-color: var(--white);
+    background: var(--surface);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 5px 15px var(--shadow);
-    transition: transform 0.3s ease;
-    border-top: 4px solid var(--primary-yellow);
+
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.12);
+    border-color: rgba(255, 215, 0, 0.4);
 }
 
 .feature-icon {
