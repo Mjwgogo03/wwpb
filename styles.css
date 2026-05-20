@@ -827,9 +827,13 @@ section {
     position: relative;
 }
 .experience-details {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
-    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.9;
 }
 
 .experience-details p {
@@ -841,13 +845,14 @@ section {
 .experience-details ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
-    max-width: 700px;
+    margin: 0;
+    max-width: 750px;
 }
 
 .experience-details li {
-    margin-bottom: 12px;
-    font-size: 1.05rem;
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+    text-align: center;
 }
 .theexperience::before {
     content: '⬡';
@@ -875,19 +880,6 @@ section {
     display: block;
 }
 
-.theexperience-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-.theexperience-card {
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, var(--white) 100%);
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px var(--shadow);
-    border: 2px solid var(--light-gray);
-}
 
 .stheexperience-icon {
     font-size: 3.5rem;
