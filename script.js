@@ -46,22 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
     // Interactive Floating Props
     // ===================================
-    const props = document.querySelectorAll('.prop');
-    let mouseX = 0;
-    let mouseY = 0;
+   const props = document.querySelectorAll('.prop');
 
-    document.addEventListener('mousemove', function(e) {
-        mouseX = e.clientX / window.innerWidth;
-        mouseY = e.clientY / window.innerHeight;
+window.addEventListener('scroll', function () {
+    const scrolled = window.pageYOffset;
 
-        props.forEach((prop, index) => {
-            const speed = (index + 1) * 0.5;
-            const x = (mouseX - 0.5) * 50 * speed;
-            const y = (mouseY - 0.5) * 50 * speed;
-            
-            prop.style.transform = `translate(${x}px, ${y}px)`;
-        });
+    props.forEach((prop, index) => {
+        const speed = (index % 3 + 1) * 0.2;
+
+        const y = -(scrolled * speed);
+        const x = Math.sin(scrolled * 0.002 + index) * 10; // subtle sideways float
+
+        prop.style.transform = `translate(${x}px, ${y}px)`;
     });
+});
 
     // ===================================
     // Scroll-based Parallax for Props
@@ -71,11 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
         props.forEach((prop, index) => {
             const speed = (index % 3 + 1) * 0.2;
             const yPos = -(scrolled * speed);
-            const currentTransform = prop.style.transform || '';
-            const translateMatch = currentTransform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-            if (translateMatch) {
-                prop.style.transform = `translate(${translateMatch[1]}, calc(${translateMatch[2]} + ${yPos}px))`;
-            }
         });
     });
 
