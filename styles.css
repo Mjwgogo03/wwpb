@@ -33,7 +33,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--black);
-    background: transparent;
+    background-color: var(--soft-black); /* or var(--off-white) depending on tone */
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
