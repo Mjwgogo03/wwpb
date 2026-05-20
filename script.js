@@ -61,16 +61,6 @@ window.addEventListener('scroll', function () {
     });
 });
 
-    // ===================================
-    // Scroll-based Parallax for Props
-    // ===================================
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        props.forEach((prop, index) => {
-            const speed = (index % 3 + 1) * 0.2;
-            const yPos = -(scrolled * speed);
-        });
-    });
 
     // ===================================
     // Enhanced Scroll Reveal Animations
