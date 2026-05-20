@@ -353,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
     animation: pulse 3s infinite;
 }
 
-@keyframes pulsesoft {
+@keyframes pulse {
     0%, 100% {
         opacity: 0.4;
         transform: translateY(-50%) rotate(45deg) scale(1);
