@@ -478,11 +478,14 @@ body::before {
    Hero Section
    =================================== */
 .hero {
+    background: linear-gradient(
+        180deg,
+        rgba(43, 43, 43, 0.92),
+        rgba(58, 58, 58, 0.92)
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-background: transparent;
     position: relative;
     overflow: hidden;
     margin-top: 70px;
