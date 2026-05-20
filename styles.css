@@ -353,6 +353,8 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
 }
 
 .logo {
@@ -422,6 +424,8 @@ body::before {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin-left: auto;
+    align-items: center;
 }
 
 .nav-menu a {
@@ -1508,6 +1512,9 @@ section {
 @media (max-width: 768px) {
     .logo h1 {
         font-size: 1.3rem;
+    }
+       .logo {
+    flex-shrink: 0;
     }
 
     .logo-placeholder {
