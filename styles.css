@@ -709,10 +709,10 @@ section::before {
 
 .about-content {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: 2rem;
     align-items: start;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .about-headshot {
@@ -720,8 +720,10 @@ section::before {
 }
 
 .about-headshot img {
-    width: 250px;
-    height: 250px;
+  width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     border-radius: 10px;
     border: 5px solid var(--primary-yellow);
     object-fit: cover;
@@ -731,8 +733,11 @@ section::before {
 }
 
 .headshot-placeholder {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    min-height: 240px;
     border-radius: 10px;
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, var(--white) 100%);
     border: 5px solid var(--primary-yellow);
@@ -772,10 +777,10 @@ section::before {
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--gray);
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .about-features-section {
@@ -783,10 +788,10 @@ section::before {
 }
 
 .about-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 @media (max-width: 900px) {
     .about-features {
