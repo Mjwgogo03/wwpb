@@ -827,29 +827,27 @@ section {
     position: relative;
 }
 .experience-details {
-    margin-top: 25px;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    line-height: 1.7;
-    backdrop-filter: blur(6px);
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.8;
 }
 
 .experience-details p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .experience-details ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .experience-details li {
     margin-bottom: 12px;
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 .theexperience::before {
     content: '⬡';
