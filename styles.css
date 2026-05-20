@@ -5,12 +5,12 @@
     --primary-yellow: #FFD700;
     --bright-yellow: #FFC107;
     --light-yellow: #FFF9C4;
-    --black: #FFFFFF;
-    --soft-black: #F0F0F0;
-    --white: #4a4a4a;
-    --off-white: #3a3a3a;
-    --gray: #D5D5D5;
-    --light-gray: #5a5a5a;
+    --black: #4a4a4a;
+    --soft-black: #3a3a3a;
+    --white: #ffffff;
+    --off-white: #f0f0f0;
+    --gray: #5a5a5a;
+    --light-gray: #D5D5D5;
     --shadow: rgba(255, 255, 255, 0.1);
 }
 
