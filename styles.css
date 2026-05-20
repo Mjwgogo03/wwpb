@@ -820,14 +820,14 @@ section {
 }
 
 /* ===================================
-   Services Section
+   theexperience Section
    =================================== */
-.services {
+.theexperience {
     background-color: transparent;
     position: relative;
 }
 
-.services::before {
+.theexperience::before {
     content: '⬡';
     position: absolute;
     left: 5%;
@@ -838,7 +838,7 @@ section {
     transform: rotate(15deg);
 }
 
-.services::after {
+.theexperience::after {
     content: '⬡';
     position: absolute;
     right: 8%;
@@ -849,17 +849,17 @@ section {
     transform: rotate(-20deg);
 }
 
-.services-content {
+.theexperience-content {
     display: block;
 }
 
-.services-grid {
+.theexperience-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.service-card {
+.theexperience-card {
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, var(--white) 100%);
     padding: 2.5rem;
     border-radius: 15px;
@@ -867,45 +867,45 @@ section {
     border: 2px solid var(--light-gray);
 }
 
-.service-icon {
+.stheexperience-icon {
     font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
-.service-card h3 {
+.theexperience-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--black);
 }
 
-.service-card p {
+.theexperience-card p {
     color: var(--gray);
     line-height: 1.7;
 }
 
-.services-pricing {
+.theexperience-pricing {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.services-pricing .pricing-header h3 {
+.theexperience-pricing .pricing-header h3 {
     font-size: 1.5rem;
     color: var(--black);
     margin-bottom: 1.5rem;
 }
 
 @media (max-width: 1024px) {
-    .services-content {
+    .theexperience-content {
         grid-template-columns: 1fr;
     }
     
-    .services-pricing {
+    .theexperience-pricing {
         margin-top: 3rem;
     }
 }
 
 @media (max-width: 768px) {
-    .services-grid {
+    .theexperience-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -1566,7 +1566,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .services-grid {
+    .theexperience-grid {
         grid-template-columns: 1fr;
     }
 
@@ -2304,7 +2304,7 @@ section {
    Widget Styling Overrides
    =================================== */
 .booking-widget iframe,
-.services-pricing iframe,
+.theexperience-pricing iframe,
 .contact-form iframe {
     filter: hue-rotate(200deg) saturate(1.3) brightness(1.05);
     background: transparent;
@@ -2316,7 +2316,7 @@ section {
 
 /* Wrapper styling to blend widgets with site */
 .booking-widget,
-.services-pricing,
+.theexperience-pricing,
 .contact-form > div:has(iframe),
 .manage-booking > .booking-widget {
     border-radius: 12px;
