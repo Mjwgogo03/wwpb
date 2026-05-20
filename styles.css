@@ -876,54 +876,16 @@ section {
     transform: rotate(-20deg);
 }
 
-.theexperience-content {
-    display: block;
+.experience-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--primary-yellow);
+    display: inline-block;
+    padding: 6px 14px;
+    border: 2px solid var(--primary-yellow);
+    border-radius: 999px;
 }
-
-
-.stheexperience-icon {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.theexperience-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--black);
-}
-
-.theexperience-card p {
-    color: var(--gray);
-    line-height: 1.7;
-}
-
-.theexperience-pricing {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.theexperience-pricing .pricing-header h3 {
-    font-size: 1.5rem;
-    color: var(--black);
-    margin-bottom: 1.5rem;
-}
-
-@media (max-width: 1024px) {
-    .theexperience-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .theexperience-pricing {
-        margin-top: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .theexperience-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ===================================
    Book Section
    =================================== */
