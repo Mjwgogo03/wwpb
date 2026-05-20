@@ -1148,7 +1148,6 @@ section {
 }
 
 .gallery-item {
-    .gallery-item {
     flex: 0 0 33.333%;
     min-width: 33.333%;
     box-sizing: border-box;
