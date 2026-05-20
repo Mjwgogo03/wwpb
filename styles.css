@@ -674,6 +674,8 @@ section::before {
    About Section
    =================================== */
 .about {
+    position: relative;
+    overflow: hidden;
     background: linear-gradient(
         180deg,
         transparent 0%,
@@ -782,11 +784,15 @@ section::before {
 
 .about-features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
-
+@media (max-width: 900px) {
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
 .feature {
     background: var(--surface);
     backdrop-filter: blur(10px);
