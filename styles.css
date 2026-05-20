@@ -251,8 +251,11 @@ body::before {
    Header & Navigation
    =================================== */
 .header {
-    background-color: #D5D5D5;
-    box-shadow: 0 2px 10px var(--shadow);
+    background-color: rgba(43, 43, 43, 0.92); /* matches your dark background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     position: fixed;
     width: 100%;
     top: 0;
