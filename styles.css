@@ -1637,11 +1637,9 @@ max-height: 400px;
     }
 
     /* Gallery Carousel Responsive */
-    .gallery-item {
-        flex: 0 0 100%;
-        min-width: 100%;
-    }
-
+.gallery-item {
+    flex: 0 0 33.333%;
+}
     .carousel-prev {
         left: 5px;
     }
