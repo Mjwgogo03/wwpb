@@ -886,6 +886,34 @@ section {
     border: 2px solid var(--primary-yellow);
     border-radius: 999px;
 }
+.addons-spacing {
+    height: 35px;
+}
+
+.addons-title {
+    text-align: center;
+    color: var(--primary-yellow);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.addons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.addons-list li {
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+    color: var(--off-white);
+}
+
+.addons-list span {
+    color: var(--primary-yellow);
+    font-weight: 600;
+}
 /* ===================================
    Book Section
    =================================== */
