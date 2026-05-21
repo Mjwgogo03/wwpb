@@ -930,7 +930,14 @@ section {
 /* ===================================
    Experience Setup Image
    =================================== */
-
+.experience-preview-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-yellow);
+    font-weight: 700;
+}
 .experience-image {
     width: 100%;
     display: flex;
