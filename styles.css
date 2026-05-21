@@ -914,6 +914,9 @@ section {
     color: var(--primary-yellow);
     font-weight: 600;
 }
+.experience-addons {
+    text-align: center;
+}
 /* ===================================
    Book Section
    =================================== */
