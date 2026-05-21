@@ -1005,9 +1005,9 @@ max-height: 400px;
 }
 
 /* ===================================
-   Manage Booking Section
+   My Booking Section
    =================================== */
-.manage-booking {
+.my-booking {
     background-color: transparent;
     padding: 5rem 0;
 }
@@ -2384,7 +2384,7 @@ max-height: 400px;
     background: transparent;
 }
 
-.manage-booking iframe {
+.my-booking iframe {
     background: transparent;
 }
 
@@ -2392,7 +2392,7 @@ max-height: 400px;
 .booking-widget,
 .theexperience-pricing,
 .contact-form > div:has(iframe),
-.manage-booking > .booking-widget {
+.my-booking > .booking-widget {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
