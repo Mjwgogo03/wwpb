@@ -845,14 +845,19 @@ section {
 .experience-details ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     max-width: 750px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .experience-details li {
     margin-bottom: 14px;
     font-size: 1.1rem;
     text-align: center;
+    width: 100%;
 }
 .theexperience::before {
     content: '⬡';
