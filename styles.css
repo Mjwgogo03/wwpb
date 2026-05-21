@@ -1209,7 +1209,7 @@ max-height: 400px;
 
 /* Items */
 .gallery-item {
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% / 3);
     min-width: 100%;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
