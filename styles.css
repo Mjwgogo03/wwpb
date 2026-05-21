@@ -1160,7 +1160,7 @@ max-height: 400px;
 
 .testimonial-arrow:hover {
     color: var(--white);
-
+}
 .testimonial-arrow-left {
     left: -60px;
 }
