@@ -1170,7 +1170,7 @@ max-height: 400px;
 }
 
 /* ===================================
-   Gallery Section (FIXED)
+   Gallery Section (FIXED - STABLE VERSION)
    =================================== */
 .gallery {
     background-color: transparent;
@@ -1196,25 +1196,23 @@ max-height: 400px;
 .gallery-carousel {
     overflow: hidden;
     width: 100%;
-    max-width: 100%;
 }
 
 /* Track */
 .gallery-track {
     display: flex;
-    gap: 1rem;
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform;
-    width: 100%;
 }
 
-/* Items */
+/* Items (FIXED: no calc, no drift) */
 .gallery-item {
-    flex: 0 0 calc((100% - 2rem) / 3);
-    min-width: 0;
+    flex: 0 0 33.333%;
     box-sizing: border-box;
     position: relative;
+    padding: 0 0.5rem;
 }
+
 /* Frame */
 .photo-frame {
     background-color: var(--white);
@@ -1225,6 +1223,7 @@ max-height: 400px;
     position: relative;
 }
 
+/* IMAGE (stable + consistent) */
 .photo-frame img {
     width: 100%;
     height: auto;
@@ -1236,12 +1235,12 @@ max-height: 400px;
     transition: transform 0.4s ease;
     background: #fff;
 }
-/* Hover ONLY on frame (prevents layout jump) */
+
+/* Hover effect */
 .gallery-item:hover .photo-frame img {
     transform: scale(1.05);
 }
 
-/* Proper hover effect (no layout shift) */
 .gallery-item:hover {
     transform: translateY(-6px);
 }
@@ -1337,12 +1336,17 @@ max-height: 400px;
 }
 
 /* ================================
-   MOBILE FIXES (IMPORTANT)
+   MOBILE FIXES
 ================================ */
 @media (max-width: 768px) {
 
     .gallery-carousel-container {
         padding: 0 40px;
+    }
+
+    .gallery-item {
+        flex: 0 0 100%;
+        padding: 0;
     }
 
     .photo-frame img {
