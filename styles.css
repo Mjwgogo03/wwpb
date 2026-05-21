@@ -927,24 +927,37 @@ section {
     text-align: center;
 }
 
-/*===================================
+/* ===================================
    Experience Setup Image
    =================================== */
 
 .experience-image {
     width: 100%;
-    margin: 3rem auto;
     display: flex;
     justify-content: center;
+    margin: 2rem auto 4rem;
+    padding: 0 1.5rem;
 }
 
 .experience-image img {
     width: 100%;
-    max-width: 1100px;
-    border-radius: 24px;
-    border: 2px solid rgba(255, 204, 0, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    max-width: 900px;
+    max-height: 500px;
     object-fit: cover;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 204, 0, 0.15);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(255, 204, 0, 0.05);
+
+    transition: transform 0.4s ease;
+}
+
+.experience-image img:hover {
+    transform: scale(1.01);
 }
 /* ===================================
    Book Section
