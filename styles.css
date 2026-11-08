@@ -1383,6 +1383,15 @@ max-height: 400px;
         height: 32px;
         font-size: 1.1rem;
     }
+   /* Fix mobile menu text visibility */
+@media (max-width: 768px) {
+
+    nav a,
+    .menu a,
+    .mobile-menu a {
+        color: #000000 !important;
+    }}
+
 }
 /* ===================================
    Contact Section
